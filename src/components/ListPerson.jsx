@@ -14,7 +14,7 @@ const secondPerson = {
 };
 
 const ListPerson = () => {
-  const [personState, setPersonState] = useState(firstPerson);
+  const [personState, setPersonState] = useState({});
   return (
     <div>
       <button onClick={() => setPersonState(firstPerson)}>First Person</button>
