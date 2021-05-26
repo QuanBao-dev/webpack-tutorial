@@ -55,7 +55,7 @@ module.exports = {
   },
   devtool: "source-map",
   plugins:
-    process.env.NODE_ENV === "development"
+    process.env.NODE_ENV !== "production"
       ? [...array, new ReactRefreshWebpackPlugin()]
       : array,
 };
